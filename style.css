@@ -17,13 +17,14 @@ div#map_canvas {
   margin: 0px auto -1px auto; 
 }
 
-div#wapiblock {
-   margin: 10px 15px;	
-   width: 300px;
-   height: 200px;
-   border: 20px solid aliceblue;
-   border-radius: 10px;
-   align: center;
-   box-shadow: 5px 5px 5px #c6c6c6;
-  
+div#panoramio_widget{  
+  margin: 20px 0;
+  width: 500px;
+  height: 500px;
+  border: 20px solid aliceblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #c6c6c6;
+  align:center;
+  text-align: center;
+  margin: 0px auto -1px auto; 
 }

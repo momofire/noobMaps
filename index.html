@@ -13,18 +13,25 @@
   <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
   <script type ="text/javascript" src = "http://www.panoramio.com/wapi/wapi.js?v=1"></script>
 	<script src="script.js"></script>
+  	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script type="text/javascript" src="http://www.panoramio.com/wapi/wapi.js?v=1"></script>
 
+	<script src="script.js"></script>
+	
 </head>
 <body>
   <h1>HackNY Intro Project</h1>
 
   <form id="address_form" method="post" action="#">
     <input type="text" id="address_input_field" name="address" placeholder="Address" />
-    <input type="submit" id="submit" name="submit" value="Go" />
+	<input type="submit" id="submit" name="submit" value="Go" />
   </form>
-  
+  	
   <div id="map_canvas"></div>
 
+  <div id="panoramio_widget"></div>
+
+  
 	<footer>
 	  <p>HackNY</p>
 	  <p>by Shamoon Siddiqui</p>
@@ -36,15 +43,6 @@
 	  
 	  <p>TESTING MOHAMMAD</p>
 	</footer>
-	
-	<div id="wapiblock"></div>
-<!--	<div id="div_photo_ex" style="float: right; margin: 10px 15px"></div>
-<script type="text/javascript">
-  var beaches = {'tag': 'beaches'};
-  var photo_ex_options = {'width': 350, 'height': 200};
-  var photo_ex_widget = new panoramio.PhotoWidget('div_photo_ex', beaches, photo_ex_options);
-  photo_ex_widget.setPosition(0);
-</script> -->
 	
 </body>
 </html>
