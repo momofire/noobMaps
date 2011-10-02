@@ -1,9 +1,8 @@
 /* JavaScript goes here */
 
 jQuery(document).ready(function($) {
-  
-  initializeForm();
   initializeMap();
+  initializeForm();
 });
 
 function initializeForm() {
@@ -21,7 +20,7 @@ function initializeForm() {
         lat = data.ResultSet.Results[0].latitude;
         lng = data.ResultSet.Results[0].longitude;
         
-        // initializeMap(lat, lng);
+        initializeMap(lat, lng);
       },
       error: function(e){
         alert("AJAX call to API FAILED");
@@ -32,8 +31,8 @@ function initializeForm() {
 };
 
 function initializeMap(lat, lng) {
-  lat = lat || -34.397;
-  lng = lng || 150.644;
+  lat = lat || 	40.7550;
+  lng = lng || -73.9866;
   
   var myOptions = {
     zoom: 14,
