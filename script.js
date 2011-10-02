@@ -1,6 +1,8 @@
 /* JavaScript goes here */
 
 jQuery(document).ready(function($) {
+  initializePics();
+  initializeMap();
   initializeForm();
 });
 
@@ -20,6 +22,7 @@ function initializeForm() {
         lng = data.ResultSet.Results[0].longitude;
         
         initializeMap(lat, lng);
+        initializePics(lat, lng);
       },
       error: function(e){
         alert("AJAX call to API FAILED");
@@ -30,8 +33,8 @@ function initializeForm() {
 };
 
 function initializeMap(lat, lng) {
-  lat = lat || -34.397;
-  lng = lng || 150.644;
+  lat = lat || 	40.7550;
+  lng = lng || -73.9866;
   
   var myOptions = {
     zoom: 14,
@@ -40,4 +43,21 @@ function initializeMap(lat, lng) {
   };
   
   var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+}
+
+function initializePics(lat, lng) {
+  lat = lat || 	40.7550;
+  lng = lng || -73.9866;
+  
+  var myRequest = {
+  	'rect': {'sw': {'lat': lat - .05, 'lng': lng - .05}, 'ne': {'lat': lat + .05, 'lng': lng + .05}}
+  };
+
+  var myOptions = {
+  	'width': 600,
+  	'height': 400
+  };
+
+  var widget = new panoramio.PhotoWidget('panoramio_widget', myRequest, myOptions);
+  widget.setPosition(0);
 }
