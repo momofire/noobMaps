@@ -7,7 +7,7 @@ body {
 
 div#map_canvas {
   margin: 20px 0;
-  width: 40%;
+  width: 500px;
   height: 500px;
   border: 20px solid aliceblue;
   border-radius: 10px;
@@ -20,7 +20,7 @@ div#map_canvas {
 }
 
 div#panoramio_widget{  margin: 20px 0;
-  width: 40%;
+  width: 500px;
   height: 500px;
   border: 20px solid aliceblue;
   border-radius: 10px;
