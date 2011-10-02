@@ -1,7 +1,9 @@
 /* JavaScript goes here */
 
 jQuery(document).ready(function($) {
+  
   initializeForm();
+  initializeMap();
 });
 
 function initializeForm() {
@@ -19,7 +21,7 @@ function initializeForm() {
         lat = data.ResultSet.Results[0].latitude;
         lng = data.ResultSet.Results[0].longitude;
         
-        initializeMap(lat, lng);
+        // initializeMap(lat, lng);
       },
       error: function(e){
         alert("AJAX call to API FAILED");
