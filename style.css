@@ -2,6 +2,7 @@
 
 body { 
   font-family: Arial;
+  text-align: center;
 }
 
 div#map_canvas {
@@ -11,5 +12,7 @@ div#map_canvas {
   border: 20px solid aliceblue;
   border-radius: 10px;
   box-shadow: 5px 5px 5px #c6c6c6;
-  float:center;
+  align:center;
+  text-align: center;
+  margin: 0px auto -1px auto; 
 }
