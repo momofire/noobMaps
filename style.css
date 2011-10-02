@@ -7,7 +7,7 @@ body {
 
 div#map_canvas {
   margin: 20px 0;
-  width: 40%;
+  width: 500px;
   height: 500px;
   border: 20px solid aliceblue;
   border-radius: 10px;
@@ -19,14 +19,11 @@ div#map_canvas {
   float: left;
 }
 
-<<<<<<< HEAD
+
 div#panoramio_widget{  
   margin: 20px 0;
-  width: 500px;
-=======
-div#panoramio_widget{  margin: 20px 0;
   width: 40%;
->>>>>>> 3904a5b5c6c9f2df6dfc9b61378ea8a7bb21de9d
+  width: 500px;
   height: 500px;
   border: 20px solid aliceblue;
   border-radius: 10px;
@@ -36,8 +33,4 @@ div#panoramio_widget{  margin: 20px 0;
   margin: 0px auto -1px auto; 
   margin-right: 5%;
   float: right;
-}
-
-div#rest {
-	float: both;
 }

@@ -55,14 +55,15 @@ function initializePics(lat, lng) {
   lng = parseFloat(lng);
   
   var myRequest = {
-  	'rect': {'sw': {'lat': lat - .002, 'lng': lng - .002}, 'ne': {'lat': lat + .002, 'lng': lng + .002}}
+  	'rect': {'sw': {'lat': lat - .05, 'lng': lng - .05}, 'ne': {'lat': lat + .05, 'lng': lng + .05}}
   };
 
   var myOptions = {
   	'width': 500,
   	'height': 500
   };
-
-  var widget = new panoramio.PhotoWidget('panoramio_widget', myRequest, myOptions);
+  
+  var panoramio_widget = document.getElementById('panoramio_widget');
+  var widget = new panoramio.PhotoWidget(panoramio_widget, myRequest, myOptions);
   widget.setPosition(0);
 }
