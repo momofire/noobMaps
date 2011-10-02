@@ -14,9 +14,7 @@ div#map_canvas {
   box-shadow: 5px 5px 5px #c6c6c6;
   align:center;
   text-align: center;
-  margin: 0px auto -1px auto;
-  margin-left:5%;
-  float: left;
+  margin: 0px auto -1px auto; 
 }
 
 div#panoramio_widget{  margin: 20px 0;
@@ -28,10 +26,4 @@ div#panoramio_widget{  margin: 20px 0;
   align:center;
   text-align: center;
   margin: 0px auto -1px auto; 
-  margin-right: 5%;
-  float: right;
-}
-
-div#rest {
-	float: both;
 }
