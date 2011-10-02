@@ -21,6 +21,7 @@ function initializeForm() {
         lng = data.ResultSet.Results[0].longitude;
         
         initializeMap(lat, lng);
+		initializePics(lat, lng);
       },
       error: function(e){
         alert("AJAX call to API FAILED");
@@ -41,4 +42,20 @@ function initializeMap(lat, lng) {
   };
   
   var map = new google.maps.Map(document.getElementById('map_canvas'), myOptions);
+}
+
+function initializePics(lat, lng){
+	lat = lat || 40.7550;
+	lng = lng || -73.9866;
+	
+	var beaches = {'tag': 'beaches'};
+	
+	var myOptions = {
+	  'width': 300,
+	  'height': 200,
+	};
+	
+	var wapiblock = document.getElementById('wapiblock');
+	var widget = new panoramio.PhotoWidget(wapiblock, beaches, myOptions);
+	widget.setPosition(0);
 }
