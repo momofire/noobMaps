@@ -64,7 +64,6 @@ function initializePics(lat, lng) {
   };
   
   var panoramio_widget = document.getElementById('panoramio_widget');
-  
   var widget = new panoramio.PhotoWidget(panoramio_widget, myRequest, myOptions);
   widget.setPosition(0);
 }
