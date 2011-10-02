@@ -54,8 +54,8 @@ function initializePics(lat, lng) {
   };
 
   var myOptions = {
-  	'width': 600,
-  	'height': 400
+  	'width': 500,
+  	'height': 500
   };
 
   var widget = new panoramio.PhotoWidget('panoramio_widget', myRequest, myOptions);
