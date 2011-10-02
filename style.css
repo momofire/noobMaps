@@ -1,0 +1,14 @@
+/* CSS goes here */
+
+body { 
+  font-family: Arial;
+}
+
+div#map_canvas {
+  margin: 20px 0;
+  width: 400px;
+  height: 200px;
+  border: 10px solid aliceblue;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #c6c6c6;
+}
